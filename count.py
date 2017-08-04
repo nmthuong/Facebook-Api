@@ -5,7 +5,7 @@ def gettoken():
     payload = {'u': username, 'p': password}
     get_token = requests.get('http://gymtranhuynh-winazure.rhcloud.com/token.php', params=payload).json()
     token = get_token['access_token']
-    return token;
+    return token
 
 
 question = raw_input('Ban da co token full quyen chua (Y or N) ')
